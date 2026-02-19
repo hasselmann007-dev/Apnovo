@@ -19,6 +19,11 @@ type Lead = {
   createdAt?: any;
 };
 
+export default function AdminClient() {
+  return <div>Admin</div>;
+}
+
+
   function Admin() {
   const router = useRouter();
   const [userEmail, setUserEmail] = useState<string | null>(null);
