@@ -1,0 +1,17 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    function isAdmin() {
+      return request.auth != null && request.auth.token.admin == true;
+    }
+
+    match /leads/{docId} {
+      // captação pública (criar lead)
+      allow create: if true;
+
+      // leitura/alteração apenas para admin
+      allow read, update, delete: if isAdmin();
+    }
+  }
+}

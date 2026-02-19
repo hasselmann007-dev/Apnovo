@@ -1,0 +1,22 @@
+.center{min-height:60vh;display:grid;place-items:center}
+.panel{max-width:560px;width:100%;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.10);border-radius:18px;padding:18px;box-shadow:0 18px 50px rgba(0,0,0,.35)}
+.h1{font-size:26px;font-weight:900;margin:0}
+.h2{font-size:18px;font-weight:900;margin:0 0 6px}
+.p{color:rgba(233,238,247,.86);margin:10px 0}
+.small{font-size:12px;opacity:.78}
+.btnPrimary{margin-top:10px;padding:12px 14px;border-radius:14px;border:1px solid rgba(255,255,255,.12);background:linear-gradient(135deg,#f4bf6c,#7cc5ff);color:#061026;font-weight:900;cursor:pointer}
+.btnGhost{padding:10px 12px;border-radius:14px;border:1px solid rgba(255,255,255,.12);background:rgba(255,255,255,.06);color:#e9eef7;font-weight:900;cursor:pointer}
+
+.topbar{display:flex;justify-content:space-between;align-items:flex-end;gap:14px;flex-wrap:wrap}
+.actions{display:flex;gap:10px}
+
+.metrics{margin-top:14px;display:flex;gap:12px;flex-wrap:wrap}
+.metricCard{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.10);border-radius:18px;padding:14px;min-width:180px}
+.metricLabel{font-size:12px;opacity:.8}
+.metricValue{font-size:28px;font-weight:900;margin-top:6px}
+
+.tableWrap{margin-top:14px;overflow:auto;border-radius:18px;border:1px solid rgba(255,255,255,.10);background:rgba(0,0,0,.18)}
+.table{width:100%;border-collapse:collapse;min-width:920px}
+.table th,.table td{padding:12px;border-bottom:1px solid rgba(255,255,255,.08);text-align:left;vertical-align:top}
+.table th{position:sticky;top:0;background:rgba(7,11,22,.85);backdrop-filter:blur(10px);font-size:12px;text-transform:uppercase;letter-spacing:.12em}
+.table td{color:rgba(233,238,247,.90)}

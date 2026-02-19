@@ -1,0 +1,36 @@
+.wrap{max-width:780px;margin:0 auto}
+.header{text-align:left}
+.title{font-size:28px;font-weight:900}
+.subtitle{margin-top:6px;color:rgba(233,238,247,.86)}
+.progressOuter{margin-top:14px;height:10px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.10);border-radius:999px;overflow:hidden}
+.progressInner{height:100%;background:linear-gradient(135deg,#f4bf6c,#7cc5ff)}
+.progressText{margin-top:8px;font-size:12px;opacity:.8}
+
+.card{margin-top:18px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.10);border-radius:18px;padding:18px;box-shadow:0 18px 50px rgba(0,0,0,.35)}
+.q{margin:0 0 8px;font-size:20px;font-weight:900}
+.hint{margin:0 0 14px;color:rgba(233,238,247,.82)}
+.input{width:100%;padding:12px 14px;border-radius:14px;border:1px solid rgba(255,255,255,.12);background:rgba(0,0,0,.18);color:#e9eef7;outline:none}
+.input:focus{border-color:rgba(244,191,108,.7)}
+
+.choices{display:flex;gap:12px;flex-wrap:wrap}
+.choicesCol{display:grid;gap:10px}
+.choice{padding:12px 14px;border-radius:14px;border:1px solid rgba(255,255,255,.12);background:rgba(0,0,0,.18);color:#e9eef7;font-weight:800;cursor:pointer;text-align:left}
+.choice:hover{border-color:rgba(124,197,255,.6)}
+.choiceOn{background:rgba(244,191,108,.18);border-color:rgba(244,191,108,.65)}
+
+.microcopy{margin-top:10px;font-size:12px;opacity:.82}
+
+.formRow{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.label{display:flex;flex-direction:column;gap:8px;font-weight:800;font-size:13px}
+
+.navRow{display:flex;justify-content:space-between;gap:12px;margin-top:16px}
+.navBtn{padding:12px 14px;border-radius:14px;border:1px solid rgba(255,255,255,.12);background:rgba(255,255,255,.05);color:#e9eef7;font-weight:900;cursor:pointer}
+.navBtn:disabled{opacity:.45;cursor:not-allowed}
+.navBtnPrimary{padding:12px 14px;border-radius:14px;border:1px solid rgba(255,255,255,.12);background:linear-gradient(135deg,#f4bf6c,#7cc5ff);color:#061026;font-weight:900;cursor:pointer}
+.navBtnPrimary:disabled{opacity:.55;cursor:not-allowed}
+
+.privacy{margin-top:10px;font-size:12px;opacity:.75}
+
+@media (max-width: 720px){
+  .formRow{grid-template-columns:1fr}
+}
