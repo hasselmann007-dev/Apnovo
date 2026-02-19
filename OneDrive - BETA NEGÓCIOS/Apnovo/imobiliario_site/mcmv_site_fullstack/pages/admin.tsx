@@ -1,3 +1,4 @@
+import dynamic from 'next/dynamic';
 import { onAuthStateChanged, signOut } from 'firebase/auth';
 import { collection, onSnapshot, orderBy, query } from 'firebase/firestore';
 import { useEffect, useMemo, useState } from 'react';
@@ -18,7 +19,7 @@ type Lead = {
   createdAt?: any;
 };
 
-export default function Admin() {
+  function Admin() {
   const router = useRouter();
   const [userEmail, setUserEmail] = useState<string | null>(null);
   const [isAdmin, setIsAdmin] = useState<boolean | null>(null);
